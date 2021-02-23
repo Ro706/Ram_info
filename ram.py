@@ -1,4 +1,13 @@
 import psutil
+import time
+from pyfiglet import Figlet
+from tqdm import tqdm
+
+f=Figlet(font='slant')
+print (f.renderText('Ram_info'))
+
+for i in tqdm(range(100)):
+     time.sleep(0.3)
 def get_size(bytes,suffix='B'):
     factor = 1024
     for unit in ['','K','M','G','T','P']:
